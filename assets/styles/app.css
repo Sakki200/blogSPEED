@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  form {
+    @apply max-w-screen-sm mx-auto;
+  }
+  input {
+    @apply border-2 border-slate-400 rounded-md p-2 w-full mb-4;
+  }
+  input[type="checkbox"], input[type="color"] {
+    @apply w-fit ml-2;
+  }
+  button {
+    @apply bg-slate-50 hover:bg-slate-300 rounded-md border-2 border-slate-400 px-4 py-2;
+  }
+}
+body {
+  color: white;
+  background-color: rgb(49, 58, 66);
+}
